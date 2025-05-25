@@ -20,6 +20,6 @@ COPY --from=builder /app /app
 
 RUN npm install pm2 -g
 
-EXPOSE 8899
+EXPOSE 7890
 
 CMD ["pm2-runtime", "server/index.js"]
